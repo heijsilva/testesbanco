@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#petsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.petCard {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+}
+
+.petCard:hover {
+    transform: scale(1.05);
+}
+
+.petImage {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.petInfo {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.petDetails {
+    margin-top: 10px;
+    display: none;
+    background-color: #f9f9f9;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.petDetails p {
+    margin: 5px 0;
+}
+
+.detailsButton {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.detailsButton:hover {
+    background-color: #0056b3;
+}
+
+.petDescription {
+    margin-top: 12px;
+    font-style: italic;
+    color: #555;
+    font-size: 13px;
+}
+
+.petStatus {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.statusLabel {
+    font-weight: bold;
+}
+
+.statusValue {
+    color: #4CAF50;
+}

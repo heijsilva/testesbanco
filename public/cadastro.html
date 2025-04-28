@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/styles/cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro</h1>
+        <form id="cadastroForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <label for="tipoUsuario">Tipo de Usuário:</label>
+            <select id="tipoUsuario" name="tipoUsuario" required>
+                <option value="adotante">Adotante</option>
+                <option value="ong">ONG</option>
+            </select>
+
+            <div id="adotanteCampos" class="hidden">
+                <h2>Endereço Adotante</h2>
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" name="rua">
+
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" name="numero">
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade">
+
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado">
+            </div>
+
+            <div id="ongCampos" class="hidden">
+                <h2>Informações da ONG</h2>
+                <label for="nome_ong">Nome da ONG:</label>
+                <input type="text" id="nome_ong" name="nome_ong">
+
+                <label for="cnpj">CNPJ:</label>
+                <input type="text" id="cnpj" name="cnpj">
+
+                <h3>Endereço da ONG</h3>
+                <label for="rua_ong">Rua:</label>
+                <input type="text" id="rua_ong" name="rua_ong">
+
+                <label for="numero_ong">Número:</label>
+                <input type="text" id="numero_ong" name="numero_ong">
+
+                <label for="cidade_ong">Cidade:</label>
+                <input type="text" id="cidade_ong" name="cidade_ong">
+
+                <label for="estado_ong">Estado:</label>
+                <input type="text" id="estado_ong" name="estado_ong">
+
+                <label for="telefone_ong">Telefone da ONG:</label>
+                <input type="text" id="telefone_ong" name="telefone_ong">
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <script src="/scripts/cadastro.js"></script>
+</body>
+</html>
